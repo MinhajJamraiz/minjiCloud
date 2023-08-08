@@ -1,3 +1,5 @@
+
+
 /* Color Pallet */
 :root {
     --primary-color :#2584ff;
@@ -6,6 +8,16 @@
     --heading-color:#1b0760;
     --body-color:#918ca4;
 }
+
+
+
+
+
+
+
+
+
+
 /* Typography */
 html{
     font-size: 62.5%;
@@ -14,7 +26,7 @@ body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--body-color);
     font-size: 2.4rem;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
 }
 h1,h2,h3{
     color: var(--heading-color);
@@ -49,6 +61,13 @@ p{
     
 }
 
+
+
+
+
+
+
+
 /* Links */
 
 a{
@@ -74,6 +93,12 @@ a{
     }
     
 }
+
+
+
+
+
+
 /* Badges */
 .badge{
     border-radius: 20px;
@@ -100,4 +125,35 @@ a{
     .badge--small{
         font-size: 1.2rem;
     }
+}
+
+
+
+
+
+
+
+/* Lists */
+.list{
+    list-style: none;
+    padding-left: 0;
+    color: var(--heading-color);
+}
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+.list--tick {
+    list-style-image: url(/images/tick.svg);
+    padding-left: 3rem;
+}
+.list--tick .list__item{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width:1024px) {
+    .list--tick .list__item{
+        padding-left: 0;
+    }
+    
 }
