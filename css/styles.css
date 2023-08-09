@@ -15,6 +15,8 @@
     --accent-color:#ff3400;
     --heading-color:#1b0760;
     --body-color:#918ca4;
+    --border-color:#ccc;
+    --border-radius:30px;
 }
 
 
@@ -246,4 +248,44 @@ a{
     .btn{
         font-size: 1.5rem;
     }
+}
+
+
+
+
+
+/* Inputs */
+.input{
+    padding: 1.5rem 3.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    outline: 0;
+    color: var(--heading-color);
+}
+.input::placeholder{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    opacity: 0.4;
+}
+@media screen and (min-width:1024px) {
+    .input{
+        font-size:1.5rem;
+    }
+}
+
+
+
+/* Input Group */
+.input-group{
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+.input-group .btn{
+    margin: 4px;
 }
