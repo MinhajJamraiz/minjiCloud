@@ -289,6 +289,7 @@ a{
     border-radius: var(--border-radius);
     outline: 0;
     color: var(--heading-color);
+    font-size: 2rem;
 }
 .input::placeholder{
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -313,6 +314,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    min-width: 150px;
 }
 .input-group .btn{
     margin: 4px;
