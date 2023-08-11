@@ -229,7 +229,7 @@ a{
     font-size: 1.8rem;
     outline: 0;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
@@ -322,7 +322,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
-    min-width: 150px;
+    width: 0;
 }
 .input-group .btn{
     margin: 4px;
@@ -610,6 +610,9 @@ a{
     margin-top: 4rem;
     
 }
+.callout-signup{
+    transform: translateY(5rem);
+}
 @media screen and (min-width:768px) {
     .callout .grid--1x2{
         grid-template-columns: 1fr auto;
@@ -632,10 +635,7 @@ a{
 
 
 /* Collapsible */
-.collapsible{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
+
 .collapsible__header{
     display: flex;
     align-items: center;
@@ -817,6 +817,13 @@ a{
     justify-items: center;
     max-width: 700px;
     margin: 0 auto;
+    color: var(--heading-color);
+}
+@media screen and (max-width:400px) {
+    .block-domain__prices{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 6rem);    
+    }
 }
 
 @media screen and (min-width:768px) {
