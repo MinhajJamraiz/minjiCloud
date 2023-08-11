@@ -339,7 +339,8 @@ a{
     box-shadow: 0 0 20px 10px #f3f3f3;
     overflow: hidden;
 }
-.card__header,.card__body{
+.card__header ,
+.card__body{
     padding: 2rem 3rem;
 }
 
@@ -460,37 +461,60 @@ a{
 
 
 /* Quotes */
-.quote .quote__quotation{
+.quote{
+    margin: 0;
+}
+.quote__quotation{
     font-size: 3rem;
     font-style: italic;
     color: var(--body-color-darker);
     
 }
-.quote .quote__footer{
+.quote__footer{
     margin-top: 2rem;
 }
-.quote .quote__author{
+.quote__author{
     margin-top: 1rem;
-    font-size: 4rem;
+    font-size: 2rem;
 }
-.quote .quote__company{
+.quote__company{
     font-size: 1.5rem;
     margin-top: 0.5rem;
     color: var(--heading-color);
     opacity: 0.4;
     letter-spacing: 1px;
 }
-@media screen and (min-width:1024px) {
+
+@media screen and (min-width:1024px)  {
     
-    .quote .quote__quotation {
+    .quote__quotation {
         font-size: 2rem;
     }
-    .quote .quote__author{
+    .quote__author{
         font-size: 2.5rem;
     }
-    .quote .quote__company{
+    .quote__company{
         font-size: 1.2rem;
     }
+    .quote{
+        margin-left: 6rem;
+    }
+    
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .quote__quotation {
+       font-size: 2.5rem;
+   }
+   .quote__author{
+       font-size: 3rem;
+   }
+    .quote__company{
+       font-size: 1.5rem;
+   }
+    .quote{
+       margin-left: 6rem;
+   }
+   
 }
 
 
@@ -500,6 +524,7 @@ a{
 /* Grid */
 .grid{
     display: grid;
+
 }
 @media screen and (min-width:768px) {
     .grid--1x2{
@@ -527,28 +552,29 @@ a{
 }
 .testimonial__image > img{
     width: 100%;
+    min-width: 100px
 }
-.testimonial__image .icon-container{
+.testimonial__image>.icon-container{
     position: absolute;
     top: 10%;
     right: -30px;
 }
-@media screen and (min-width:768px) {
-    /* .testimonial .quote, */
-    .testimonial .quote__quotation {
+
+/* @media screen and (min-width:768px) {
+     .quote__quotation {
         font-size: 2.5rem;
     }
-    .testimonial .quote__author{
+    .quote__author{
         font-size: 3rem;
     }
-    .testimonial .quote__company{
+     .quote__company{
         font-size: 1.5rem;
     }
-    .testimonial .quote{
+     .quote{
         margin-left: 6rem;
     }
     
-}
+} */
 
 
 
